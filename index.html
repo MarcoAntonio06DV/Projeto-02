@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Básico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container-formulario">
+        <h1>Formulário de Contato</h1>
+        <p>Preencha os campos abaixo para enviar sua mensagem.</p>
+
+        <form id="meuFormulario" action="#" method="POST">
+
+            <div class="grupo-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+            </div>
+
+            <div class="grupo-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@dominio.com">
+            </div>
+
+            <div class="grupo-form" id="grupo-radio">
+                <label>Assunto de Interesse:</label>
+                
+                <div class="opcoes-radio">
+                    <input type="radio" id="assunto-trabalho" name="assunto" value="trabalho">
+                    <label for="assunto-trabalho">Acompanhamneto individual</label>
+                </div>
+                
+                <div class="opcoes-radio">
+                    <input type="radio" id="assunto-orcamento" name="assunto" value="orcamento">
+                    <label for="assunto-orcamento">fixa de Treino</label>
+                </div>
+                
+                <div class="opcoes-radio">
+                    <input type="radio" id="assunto-outro" name="assunto" value="outro">
+                    <label for="assunto-outro">Outros</label>
+                </div>
+            </div>
+
+            <div class="grupo-form">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Especifique o que Voçe busca com essa consutoria..."></textarea>
+            </div>
+            
+            <div class="grupo-form">
+                <button type="submit">Enviar</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
